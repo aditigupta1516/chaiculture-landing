@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Culture | Brew the Royal Tradition | Premium Indian Chai</title>
+    <meta name="description" content="Experience royal Indian chai tradition. Premium instant chai tea premix from Chai Culture.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="chai-loader">
+            <div class="tea-cup-loader">
+                <div class="tea-loader"></div>
+                <div class="handle-loader"></div>
+            </div>
+            <div class="steam-loader">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="bg-pattern"></div>
+    <div class="gold-overlay"></div>
+    <div class="gold-particle-container" id="goldParticles"></div>
+    
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Header with Premium Logo -->
+        <header class="header">
+            <div class="logo-container">
+                <!-- Actual Logo -->
+                <img src="logo.png" alt="Chai Culture Logo - Premium Indian Chai" class="logo" id="logo" loading="eager">
+                
+                <!-- CSS Fallback Logo -->
+                <div class="logo-fallback" id="logoFallback">
+                    <div class="premium-logo">
+                        <div class="logo-top-line">
+                            <span class="indian-text"><i class="fas fa-crown crown-icon"></i> Indian Chai</span>
+                            <span class="dot-separator">•</span>
+                            <span class="biskut-text">Chai Biskut</span>
+                        </div>
+                        
+                        <div class="logo-main-title">
+                            <span class="chai-text">Chai</span>
+                            <span class="culture-text">Culture</span>
+                        </div>
+                        
+                        <div class="logo-tagline-complete">
+                            <span class="tagline-part">creating all flavors</span>
+                            <span class="dot-separator">•</span>
+                            <span class="tagline-part">unveils of flavors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Progress Indicator -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Launch Badge with Countdown -->
+            <div class="launch-badge-container">
+                <div class="launch-badge">
+                    <span class="badge-text">🚀 Launching Soon</span>
+                    <div class="badge-glow"></div>
+                    <div class="badge-sparkle"></div>
+                </div>
+                <div class="launch-date">29 January 2026</div>
+            </div>
+            
+            <!-- Main Tagline -->
+            <div class="tagline-container">
+                <h1 class="tagline">
+                    <span class="tagline-line" data-text="Brew the">Brew the</span>
+                    <span class="tagline-line highlight" data-text="Royal Tradition">
+                        Royal Tradition
+                        <span class="underline-glow"></span>
+                    </span>
+                </h1>
+                
+                <div class="tagline-decoration">
+                    <div class="decoration-line left"></div>
+                    <div class="decoration-icon">👑</div>
+                    <div class="decoration-line right"></div>
+                </div>
+            </div>
+            
+            <!-- Brand Description -->
+            <div class="description-container">
+                <p class="description">
+                    <span class="quote-mark left">"</span>
+                    Experience the authentic taste of royal Indian chai, perfected over generations in the palaces of India. 
+                    Our premium instant chai tea premix brings heritage, authenticity, and tradition to your cup.
+                    <span class="quote-mark right">"</span>
+                </p>
+                <div class="description-author">
+                    <div class="author-line"></div>
+                    <span class="author-name">- Jay Trivedi, Founder & CEO</span>
+                    <div class="author-line"></div>
+                </div>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number" id="applicantsCount">900+</div>
+                    <div class="stat-label">Applications</div>
+                    <div class="stat-sub">in 12 hours</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Authentic</div>
+                    <div class="stat-sub">royal recipe</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Chai Love</div>
+                    <div class="stat-sub">served hot</div>
+                </div>
+            </div>
+            
+            <!-- Email Signup -->
+            <div class="signup-section">
+                <div class="signup-header">
+                    <h2 class="signup-title">
+                        <i class="fas fa-crown title-icon"></i>
+                        Be Among the First Royal Patrons
+                        <i class="fas fa-crown title-icon"></i>
+                    </h2>
+                    <p class="signup-subtitle">Join our exclusive list for early access, special offers & royal discounts</p>
+                </div>
+                
+                <form class="signup-form" id="emailForm">
+                    <div class="input-container">
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" id="emailInput" placeholder="Your royal email address" required>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Claim Early Access</span>
+                            <i class="fas fa-arrow-right btn-icon"></i>
+                            <div class="btn-shine"></div>
+                        </button>
+                    </div>
+                    <div class="form-extras">
+                        <label class="checkbox-container">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text">Send me chai recipes & tips</span>
+                        </label>
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i>
+                            We respect your privacy. No spam, ever. Unsubscribe anytime.
+                        </p>
+                    </div>
+                </form>
+                
+                <div class="success-message" id="successMessage">
+                    <div class="success-content">
+                        <i class="fas fa-check-circle success-icon"></i>
+                        <div class="success-text">
+                            <h3>Welcome to the Royal Circle!</h3>
+                            <p>You'll be among the first to experience Chai Culture. Check your email for a special welcome gift!</p>
+                        </div>
+                    </div>
+                    <div class="success-progress"></div>
+                </div>
+                
+                <div class="signup-stats">
+                    <div class="signup-count">
+                        <span class="count-number" id="signupCount">0</span>
+                        <span class="count-label">already joined</span>
+                    </div>
+                    <div class="signup-goal">
+                        <div class="goal-progress">
+                            <div class="goal-fill" id="goalFill"></div>
+                        </div>
+                        <span class="goal-text">Goal: 10,000 chai lovers</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Countdown -->
+            <div class="countdown-section">
+                <h3 class="countdown-title">
+                    <i class="fas fa-hourglass-half"></i>
+                    Our Royal Journey Begins In
+                    <i class="fas fa-hourglass-half"></i>
+                </h3>
+                
+                <div class="countdown-timer">
+                    <div class="time-unit">
+                        <div class="time-card">
+                            <span class="time-number" id="days">00</span>
+                            <div class="time-glow"></div>
+                        </div>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-colon">:</div>
+                    <div class="time-unit">
+                        <div class="time-card">
+                            <span class="time-number" id="hours">00</span>
+                            <div class="time-glow"></div>
+                        </div>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-colon">:</div>
+                    <div class="time-unit">
+                        <div class="time-card">
+                            <span class="time-number" id="minutes">00</span>
+                            <div class="time-glow"></div>
+                        </div>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-colon">:</div>
+                    <div class="time-unit">
+                        <div class="time-card">
+                            <span class="time-number" id="seconds">00</span>
+                            <div class="time-glow"></div>
+                        </div>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+                
+                <div class="countdown-progress">
+                    <div class="progress-fill" id="countdownProgress"></div>
+                </div>
+            </div>
+            
+            <!-- Flavors Showcase -->
+            <div class="flavors-section">
+                <div class="section-header">
+                    <h3 class="flavors-title">
+                        <span class="title-ornament left">❖</span>
+                        Experience Our Royal Blends
+                        <span class="title-ornament right">❖</span>
+                    </h3>
+                    <p class="flavors-subtitle">Each blend tells a story of royal heritage</p>
+                </div>
+                
+                <div class="flavors-grid">
+                    <div class="flavor-card" data-delay="0">
+                        <div class="flavor-icon">👑</div>
+                        <div class="flavor-glow"></div>
+                        <h4 class="flavor-name">Royal Cardamom</h4>
+                        <p class="flavor-desc">Aromatic & soothing royal blend</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Premium</span>
+                            <span class="tag">Aromatic</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flavor-card" data-delay="0.1">
+                        <div class="flavor-icon">🌿</div>
+                        <div class="flavor-glow"></div>
+                        <h4 class="flavor-name">Masala Magic</h4>
+                        <p class="flavor-desc">Perfectly spiced traditional blend</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Spiced</span>
+                            <span class="tag">Traditional</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flavor-card" data-delay="0.2">
+                        <div class="flavor-icon">🔥</div>
+                        <div class="flavor-glow"></div>
+                        <h4 class="flavor-name">Ginger Zest</h4>
+                        <p class="flavor-desc">Energizing & warmth in every sip</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Energizing</span>
+                            <span class="tag">Warm</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flavor-card" data-delay="0.3">
+                        <div class="flavor-icon">💎</div>
+                        <div class="flavor-glow"></div>
+                        <h4 class="flavor-name">Signature Blend</h4>
+                        <p class="flavor-desc">Our masterpiece royal recipe</p>
+                        <div class="flavor-tags">
+                            <span class="tag">Exclusive</span>
+                            <span class="tag">Signature</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Features Section -->
+            <div class="features-section">
+                <div class="feature">
+                    <div class="feature-icon">🚚</div>
+                    <h4>Free Shipping</h4>
+                    <p>On orders above ₹999</p>
+                </div>
+                <div class="feature-divider"></div>
+                <div class="feature">
+                    <div class="feature-icon">🏆</div>
+                    <h4>Premium Quality</h4>
+                    <p>100% authentic ingredients</p>
+                </div>
+                <div class="feature-divider"></div>
+                <div class="feature">
+                    <div class="feature-icon">♻️</div>
+                    <h4>Eco-Friendly</h4>
+                    <p>Sustainable packaging</p>
+                </div>
+                <div class="feature-divider"></div>
+                <div class="feature">
+                    <div class="feature-icon">❤️</div>
+                    <h4>Made with Love</h4>
+                    <p>In royal tradition</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Social Links -->
+                <div class="social-section">
+                    <h4 class="social-title">Join Our Royal Community</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Instagram" data-tooltip="Follow @chaiculture">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-hover">Instagram</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook" data-tooltip="Like our page">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="social-hover">Facebook</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter" data-tooltip="Tweet with us">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-hover">Twitter</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Pinterest" data-tooltip="Pin our recipes">
+                            <i class="fab fa-pinterest-p"></i>
+                            <span class="social-hover">Pinterest</span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube" data-tooltip="Watch our story">
+                            <i class="fab fa-youtube"></i>
+                            <span class="social-hover">YouTube</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="newsletter-section">
+                    <h4>Stay Updated</h4>
+                    <p>Get exclusive chai recipes and updates</p>
+                    <button class="secondary-btn" id="subscribeBtn">
+                        <i class="fas fa-bell"></i> Subscribe
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <span class="footer-logo-text">Chai Culture</span>
+                    <span class="footer-tagline">Brewing Royalty Since 2026</span>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <span class="link-divider">•</span>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <span class="link-divider">•</span>
+                    <a href="#" class="footer-link">Contact Us</a>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p class="copyright">
+                        <i class="fas fa-copyright"></i> 2026 Chai Culture. All rights reserved.
+                        <br>
+                        <span class="copyright-sub">Preserving India's Royal Tea Heritage</span>
+                    </p>
+                    <p class="design-credit">
+                        <i class="fas fa-heart heart-icon"></i>
+                        Logo Design by Meghna | Built with passion for Chai Culture
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Back to Top -->
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </footer>
+    </main>
+
+    <!-- Floating Elements -->
+    <div class="floating-element floating-chai">☕</div>
+    <div class="floating-element floating-spice">🌿</div>
+    <div class="floating-element floating-crown">👑</div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-line">
+            <div class="scroll-dot"></div>
+        </div>
+        <span class="scroll-text">Scroll</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
